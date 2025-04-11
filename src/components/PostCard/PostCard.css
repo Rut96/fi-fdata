@@ -1,0 +1,45 @@
+.PostCard {
+    width: 300px;
+    border: 1px solid #333;
+    background-color: rgba(255, 255, 255, 0.309);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.PostCard:hover{
+    background-color: #333;
+    color: white;
+    transform: scale(0.9);
+}
+
+.PostCard:hover .post-header{
+    background-color: white;
+    color: #333;
+}
+
+.post-header {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 11px 11px 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.post-body {
+    padding: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 40px;
+}
+
+
+
+
+

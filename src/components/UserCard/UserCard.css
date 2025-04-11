@@ -1,0 +1,121 @@
+.UserCard {
+    width: 250px;
+    /* max-height: 300px; */
+    border: 1px solid;
+    margin-top: 1rem;
+    padding: 1rem; 
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.358);
+    backdrop-filter: blur(10px);    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ---------------------- HEADER ---------------------- */
+
+
+.card-header {
+    padding: 1.5rem;
+    background-color: #e7e6ed;
+    position: relative;
+    border-radius: 12px;
+    height: 120px;
+}
+
+.UserCard:hover .card-name {
+    transform: scale(1.05);
+    color: #3b82f6;
+}
+
+.card-name {
+    text-align: center;
+    font-weight: 700;
+    font-size: larger;
+    /* margin-bottom: 20px; */
+}
+
+.card-username {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #FFE066;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+.card-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.popup{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    padding: 7px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.phone-popup {
+    left: -20px;
+}
+
+.link-phone:hover .phone-popup{
+    display: block;
+}
+
+.site-popup {
+    right: -20px;
+}
+
+.link-site:hover .site-popup{
+    display: block;
+}
+
+
+/* ---------------------- INFO ---------------------- */
+
+.card-address{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card-address p{
+    font-style: italic;
+}
+
+.card-company {
+    border-top: 1px solid lightgray;
+    margin-top: 10px;
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-company span{
+    background-color: #333;
+    color: white;
+    padding: 3px;
+    border-radius: 12px;
+}
+
+.card-company p{
+    font-style: italic;
+}

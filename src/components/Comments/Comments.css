@@ -1,0 +1,48 @@
+.Comments{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+}
+
+.comment {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.comment-header{
+    border: 1px solid;
+    border-radius: 12px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-email{
+    position: relative;
+    display: flex;
+}
+
+
+.side-email{
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 3px;
+    border-radius: 12px;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.comment-email:hover .side-email{
+    display: block;
+}
+

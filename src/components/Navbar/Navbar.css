@@ -1,0 +1,38 @@
+.Navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff24;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    /* margin: 0 15px 0 15px; */
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid lightgray; */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid; */
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-link {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    /* background-color:#f0f0f0; */
+    background-color: #c0e3fa;
+    transform: scale(1.1);
+    font-weight: 500;
+}
