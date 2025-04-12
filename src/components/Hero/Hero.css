@@ -1,14 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+
 .Hero {
     height: 100vh;
-    
-    /* background-image: url('../../assets/back3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-
+    padding: 70px 1rem 0 1rem;
+    position: relative;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
+
+    font-family: "Lexend Giga", sans-serif;
 }
+
+.h-box{
+    font-size: 90px;
+    cursor: default;
+}
+
+.hero-middle{
+    align-self: flex-end;
+    transition: all 0.3s ease-in-out;
+}
+
+/* .hero-middle:hover{
+    transform: rotate(90deg);
+} */
+
+/* .Hero:hover .hero-middle{
+    transform: rotate(90deg);
+} */

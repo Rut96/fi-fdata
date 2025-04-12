@@ -1,17 +1,76 @@
+.Posts{
+    padding: 70px 1rem 100px 1rem;
+    position: relative;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.Posts::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/images/postsBack.jpg');
+    background-size: cover; 
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* ---------------------------- FILTER BAR ---------------------------- */
+.filter-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    /* not working */
+    position: sticky;
+    top: 0;
+}
+
+.filter-container a{
+    text-decoration: none;
+}
+
+.add-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgb(29, 29, 31, .7);
+    border: solid 1px rgba(66, 66, 69, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-icon::before {
+    display: block;
+    content: "+";
+    color: rgb(245, 245, 247);
+    font-size: 50px;
+    font-weight: 400;
+    transition: all .3s ease-out;
+    transform-origin: center;
+}
+
+.add-icon:hover::before {
+    transform: rotate(45deg) scale(1.3);
+}
+
+/* ---------------------------- POSTS ---------------------------- */
 .posts-container{
-    padding: 70px 1rem 1rem 1rem;
-    /* padding: 1rem; */
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 20px;
     justify-items: center;
-
-    background-image: url('../../assets/postsBack.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
+/* ---------------------------- POPUP ---------------------------- */
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -35,14 +94,9 @@
 }
 
 .popup-header {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
     margin-bottom: 15px;
-
     position: relative;
 }
 
@@ -69,9 +123,5 @@
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-}
-
-.popup-comments-icon{
-    /* flex: 1; */
 }
 

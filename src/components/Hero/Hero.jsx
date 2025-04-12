@@ -1,11 +1,21 @@
 import './Hero.css'
 
 export function Hero() {
-    return(
+    return (
         <div className="Hero">
-            <h1>Our best workers</h1>
-            <h3>Join our Team</h3>
-            <p>⬇️</p>
+
+            <div className="h-box hero-top">
+                <h1>BEST</h1>
+            </div>
+
+            <div className="h-box hero-middle">
+                <h1>OF THE</h1>
+            </div>
+
+            <div className="h-box hero-bottom">
+                <h1>BEST</h1>
+            </div>
+
         </div>
     );
 }
