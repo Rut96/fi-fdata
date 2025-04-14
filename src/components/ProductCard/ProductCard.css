@@ -1,0 +1,92 @@
+.ProductCard {
+    width: 200px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.263);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem;
+
+}
+
+.product-container, .product-edit{
+    overflow: hidden;
+    height: 100%;
+}
+
+.product-header {
+    border-bottom: 1px solid;
+    padding-bottom: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-title {
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-settings {
+    display: flex;
+    gap: 10px;
+}
+
+.set{
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.edit:hover {
+    background-color: rgba(255, 255, 255, 0.436);
+}
+
+.delete:hover{
+    background-color: rgba(230, 90, 90, 0.436);
+}
+
+.product-body {
+    overflow: auto;
+    word-wrap: break-word;
+    height: 80%;
+    line-height: 1.6;
+    padding-top: 8px;
+}
+
+
+
+.product-title input{
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.product-title input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+}
+
+.product-body textarea {
+    width: 100%;
+    height: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+.product-body textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+}

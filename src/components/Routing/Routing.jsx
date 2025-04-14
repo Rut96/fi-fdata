@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { Home } from "../../pages/Home/Home";
 import { Posts } from "../../pages/Posts/Posts";
 import { AddPost } from "../../pages/AddPost/AddPost";
+import { Products } from "../../pages/Products/Products";
 
 export function Routing() {
     return (
@@ -12,6 +13,7 @@ export function Routing() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/posts" element={<Posts />} />
                 <Route path="/add-post" element={<AddPost />} />
+                <Route path="/products" element={<Products />} />
             </Routes>
         </div>
     );

@@ -1,0 +1,43 @@
+.AddProduct {
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.AddProduct h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+.AddProduct form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 1rem;
+    height: 100%;
+}
+
+.AddProduct form input {
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid;
+    font-family: "Montserrat", sans-serif;
+}
+
+.AddProduct form button {
+    font-family: "Montserrat", sans-serif;
+    padding: 0.5rem;
+    width: 20%;
+    align-self: center;
+    border-radius: 12px;
+    border: 1px solid;
+    background-color: rgba(144, 188, 241, 0.469);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.AddProduct form button:hover{
+    background-color: lightblue;
+    transform: scale(1.1);
+}
